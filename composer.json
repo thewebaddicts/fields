@@ -1,0 +1,28 @@
+{
+    "name": "twa/fields",
+    "description": "This package is for the fields provided by thewebaddicts",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "twa\\fields\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hovig Senekjian",
+            "email": "hovig@thewebaddicts.com"
+        }
+    ],
+
+    "extra": {
+        "laravel" : {
+            "providers" : [
+                "twa\\fields\\Providers\\DefaultServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {}
+}
