@@ -27,7 +27,7 @@ class DefaultServiceProvider extends ServiceProvider{
     }
 
     public function register(){
-
+        include_once(__DIR__.'/../Helpers/default.php');
         $this->loadViewsFrom(__DIR__.'/../Resources/views/' , 'FieldsView');
     }
 

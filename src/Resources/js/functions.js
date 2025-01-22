@@ -1,9 +1,8 @@
-import Cropper from "cropperjs";
-import Quill from "quill";
-import collect from "collect.js";
+import Cropper from "./cropperjs/src/index.js";
+import Quill from "./quill/dist/quill.core.js";
+import collect from "./collect.js/build/collect.js";
 
 export default class Functions {
-
     initEditor() {
         return {
             quill: false,
@@ -46,8 +45,6 @@ export default class Functions {
                 this.selectedValues = this.$wire.value;
                 this.selectedOptions = this.selectedOptions || [];
 
-               
-
                 this.$watch("selectedValues", (value) => {
                     let values;
 
@@ -57,7 +54,7 @@ export default class Functions {
                             return item;
                         }
                     );
-                   
+
                     if (this.multiple) {
                         values = collect(value)
                             .map((item) => String(item))
@@ -66,12 +63,9 @@ export default class Functions {
                             .whereIn("value", values)
                             .toArray();
 
-
-                            if(this.selectedValues.length == 0){
-                                this.open = false;
-                            }
-
-                           
+                        if (this.selectedValues.length == 0) {
+                            this.open = false;
+                        }
                     } else {
                         values = String(value);
                         this.selectedOptions = optionsArray
@@ -213,21 +207,17 @@ export default class Functions {
                     this.selectedOptions = this.selectedOptions.filter(
                         (option) => option.label !== optionLabel
                     );
-                    
 
                     if (this.multiple) {
-
                         this.selectedValues = this.selectedOptions.map(
                             (option) => option.value
                         );
 
                         this.$wire.value = this.selectedValues;
 
-                        if(this.selectedValues.length == 0){
+                        if (this.selectedValues.length == 0) {
                             this.open = false;
                         }
-                     
-
                     } else {
                         this.$wire.value = null;
                     }
@@ -639,12 +629,8 @@ export default class Functions {
             keyDown(event) {
                 this.focusedElement = event.target.closest(".language-element");
 
-
-
                 let langPicker =
                     this.focusedElement?.querySelector(".lang-picker");
-
-                   
 
                 let values = [];
                 langPicker.querySelectorAll("option").forEach((option) => {
@@ -654,8 +640,6 @@ export default class Functions {
                 let lastIndex = values.length - 1;
 
                 if (event.key === "ArrowUp" || event.keyCode === 38) {
-
-                
                     if (parseInt(langPicker.value) == lastIndex) {
                         langPicker.value = "0";
                     } else {

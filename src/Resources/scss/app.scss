@@ -62,20 +62,25 @@ select {
 }
 
 
-@import "./form/select.scss";
-@import "./form/password.scss";
-@import "./form/language.scss";
-@import "./form/fileupload.scss";
-@import "./form.scss";
+@import "./form/_select.scss";
+@import "./form/_password.scss";
+@import "./form/_language.scss";
+@import "./form/_fileupload.scss";
+// @import "./form.scss";
 
 @import "./form/editor.scss";
 
-@import "./form/common.scss";
+@import "./form/_common.scss";
 
-@import "@fancyapps/ui/dist/carousel/carousel.css";
-@import "cropperjs/dist/cropper.css";
-@import "quill/dist/quill.core.css";
-@import "quill/dist/quill.snow.css";
+// @import "@fancyapps/ui/dist/carousel/carousel.css";
+// @import "../js/cropperjs/dist/cropper.css";
+
+@import "./packages/cropper.scss";
+@import "./packages/quill.core.scss";
+@import "./packages/quill.snow.scss";
+
+// @import "quill/dist/quill.core.css";
+// @import "quill/dist/quill.snow.css";
 
 [type="text"]:focus {
     outline: none !important;
