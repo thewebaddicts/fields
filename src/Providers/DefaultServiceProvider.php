@@ -11,7 +11,7 @@ class DefaultServiceProvider extends ServiceProvider{
     public function boot(){
         Livewire::component('elements.colorpicker',\twa\fields\Elements\Colorpicker::class);
         Livewire::component('elements.date',\twa\fields\Elements\Date::class);
-        Livewire::component('elements.datetime'\twa\fields\Elements\Datetime::class);
+        Livewire::component('elements.datetime',\twa\fields\Elements\Datetime::class);
         Livewire::component('elements.editor',\twa\fields\Elements\Editor::class);
         Livewire::component('elements.email',\twa\fields\Elements\Email::class);
         Livewire::component('elements.file-upload',\twa\fields\Elements\FileUpload::class);
