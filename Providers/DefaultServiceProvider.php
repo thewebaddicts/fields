@@ -1,6 +1,6 @@
 <?php
 
-namespace Providers;
+namespace twa\fields\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
