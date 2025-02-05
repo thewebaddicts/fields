@@ -1,3 +1,4 @@
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -101,7 +102,7 @@ select {
 
                     &:after {
                         content: "\f00c";
-                        font-family: $font-awesome;
+                        // font-family: $font-awesome;
                         position: absolute;
                         right: 20px;
                         top: 50%;

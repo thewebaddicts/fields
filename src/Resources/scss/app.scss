@@ -1,7 +1,21 @@
-$font-awesome: "Font Awesome 6 Pro";
+@forward "./form/_select.scss";
+@forward "./form/_password.scss";
+@forward "./form/_language.scss";
+@forward "./form/_fileupload.scss";
+// @forward "./form.scss";
+
+@forward "./form/editor.scss";
+
+@forward "./form/_common.scss";
+
+@forward "@fancyapps/ui/dist/carousel/carousel.css";
+@forward "cropperjs/dist/cropper.css";
+@forward "quill/dist/quill.core.css";
+@forward "quill/dist/quill.snow.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+// $font-awesome: "Font Awesome 6 Pro";
 $font-family: "Inter", sans-serif;
 
 [type="text"],
@@ -62,22 +76,6 @@ select {
 }
 
 
-@import "./form/_select.scss";
-@import "./form/_password.scss";
-@import "./form/_language.scss";
-@import "./form/_fileupload.scss";
-// @import "./form.scss";
-
-@import "./form/editor.scss";
-
-@import "./form/_common.scss";
-
-// @import "@fancyapps/ui/dist/carousel/carousel.css";
-// @import "../js/cropperjs/dist/cropper.css";
-
-@import "./packages/cropper.scss";
-@import "./packages/quill.core.scss";
-@import "./packages/quill.snow.scss";
 
 // @import "quill/dist/quill.core.css";
 // @import "quill/dist/quill.snow.css";
