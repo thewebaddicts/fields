@@ -24,11 +24,29 @@ class DefaultServiceProvider extends ServiceProvider{
         Livewire::component('elements.textfield',\twa\fields\Elements\Textfield::class);
         Livewire::component('elements.toggle',\twa\fields\Elements\Toggle::class);
 
+
+        
+        // $this->loadScriptAndStyles();
+
+
     }
 
     public function register(){
         include_once(__DIR__.'/../Helpers/default.php');
         $this->loadViewsFrom(__DIR__.'/../Resources/views/' , 'FieldsView');
+
+        $this->loadRoutesFrom(__DIR__.'/../Routes/console.php');
+
+        $this->app->singleton('field-assets', function () {
+            return [
+                "vendor/twa/fields/dist/app-47V81PLc.css",
+                "vendor/twa/fields/dist/app-BNmayBpR.js"
+            ];
+        });
+
     }
 
+
+
+  
 }
