@@ -41,10 +41,7 @@ class DefaultServiceProvider extends ServiceProvider{
         $this->loadRoutesFrom(__DIR__.'/../Routes/console.php');
 
         $this->app->singleton('field-assets', function () {
-            return [
-                "vendor/twa/fields/dist/app-47V81PLc.css",
-                "vendor/twa/fields/dist/app-BNmayBpR.js"
-            ];
+            return get_assets();
         });
 
     }

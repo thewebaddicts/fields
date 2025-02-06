@@ -70,3 +70,9 @@ function get_field_modal($field)
         return $render;
     }
 
+
+    function get_assets(){
+        return collect(json_decode(file_get_contents(__DIR__.'/../../dist/.vite/manifest.json'), true))->map(function($item){
+            return "vendor/twa/fields/dist/".$item['file'];
+        })->values()->toArray();
+    }

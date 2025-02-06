@@ -4,10 +4,9 @@ use Illuminate\Support\Facades\Artisan;
 
 Artisan::command('twa:updateVite', function () {
    
-    $assets = [
-        "vendor/twa/fields/dist/app-47V81PLc.css",
-        "vendor/twa/fields/dist/app-BNmayBpR.js"
-    ];
+   
+
+    $assets = get_assets();
 
     $viteConfigPath = base_path('vite.config.js');
 
