@@ -22,13 +22,10 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-        "php artisan twa:updateVite"
-    ],
-    "post-update-cmd": [
-        "php artisan twa:updateVite"
+    "post-autoload-dump": [
+      "@php artisan twa:updateVite"
     ]
-},
+  },
   "minimum-stability": "dev",
   "require": {
     "livewire/livewire": "^3.5"
