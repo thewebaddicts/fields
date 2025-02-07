@@ -6,7 +6,7 @@
         <div>
             <div class="twa-form-input-container">
                 <div class="twa-form-input-ring">
-                    <div class="twa-form-input  min-h-[36px] pl-3 pr-0 cursor-pointer"
+                    <div class="twa-form-input"
                         x-on:click="show = !show" x-text="'Choose images (' + uploaded.length + ' uploaded) '">
                     </div>
                     <span

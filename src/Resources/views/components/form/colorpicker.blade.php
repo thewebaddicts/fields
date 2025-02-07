@@ -4,7 +4,7 @@
     </label>
     <div class="twa-form-input-container">
         <div class="twa-form-input-ring">
-            <input wire:model="value" type="color" class="twa-form-input  cursor-pointer h-[36px]">
+            <input wire:model="value" type="color" class="twa-form-input">
         </div>
     </div>
 
