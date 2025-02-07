@@ -76,7 +76,7 @@ select {
                 @apply relative mt-1 rounded-md shadow-sm;
 
                 .twa-select-search-container-box {
-                    @apply focus:ring-primary-600 focus-within:focus:ring-twafieldsprimary-600 focus-within:ring-twafieldsprimary-600 dark:focus-within:ring-twafieldsprimary-600 flex rounded-md ring-1 transition focus-within:ring-2 dark:ring-twafieldsdark-600 dark:text-twafieldsdark-300 text-twafieldsgray-600 ring-twafieldsgray-300 dark:bg-twafieldsdark-800 bg-white;
+                    @apply focus:ring-twafieldsprimary-600 focus-within:focus:ring-twafieldsprimary-600 focus-within:ring-twafieldsprimary-600 dark:focus-within:ring-twafieldsprimary-600 flex rounded-md ring-1 transition focus-within:ring-2 dark:ring-twafieldsdark-600 dark:text-twafieldsdark-300 text-twafieldsgray-600 ring-twafieldsgray-300 dark:bg-twafieldsdark-800 bg-white;
 
                     .twa-select-search-input {
                         @apply dark:placeholder-twafieldsdark-400 w-full rounded-md border-0 bg-transparent py-1.5 ring-0 placeholder:text-twafieldsgray-400 focus:outline-none focus:ring-transparent sm:text-sm sm:leading-6;
