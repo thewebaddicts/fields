@@ -16,12 +16,12 @@
             </div>
 
             <div class="modal-body p-0">
-                <div class="border-b border-b-gray-200"></div>
+                <div class="border-b border-b-twafieldsgray-200"></div>
                
                 {{$slot}}
 
 
-                <div class="border-b border-b-gray-200"></div>
+                <div class="border-b border-b-twafieldsgray-200"></div>
 
                 <div class="flex items-center gap-3 justify-end p-5" id="report_user_modal">
 

@@ -1,5 +1,5 @@
 import colors from 'tailwindcss/colors';
-// import forms from '@tailwindcss/forms';
+import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -11,10 +11,10 @@ module.exports = {
   theme: {
     extend: {
         colors: {
-            primary: colors.blue,
-            secondary: colors.slate,
-            dark: colors.slate,
-            gray: {
+            twafieldsprimary: colors.blue,
+            twafieldssecondary: colors.slate,
+            twafieldsdark: colors.slate,
+            twafieldsgray: {
                 50: "#f9fafb",
                 100: "#f3f4f6",
                 200: "#e5e7eb",
@@ -27,7 +27,7 @@ module.exports = {
                 900: "#111827",
                 950: "#030712",
             },
-            black: {
+            twafieldsblack: {
                 DEFAULT: colors.black,
                 50: "#f6f6f6",
                 100: "#e7e7e7",
@@ -54,6 +54,6 @@ module.exports = {
     },
   },
   plugins: [
-    // forms,
+    forms,
   ],
 };

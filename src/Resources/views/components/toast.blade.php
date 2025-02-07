@@ -12,7 +12,7 @@
             @mouseout="toastHovered=false" class="absolute w-full duration-300 ease-out select-none sm:max-w-xs"
             :class="{ 'toast-no-description': !toast.description }">
             <span
-                class="relative flex flex-col items-start shadow-[0_5px_15px_-3px_rgb(0_0_0_/_0.08)] w-full transition-all duration-300 ease-out bg-white border border-gray-100 sm:rounded-md sm:max-w-xs group"
+                class="relative flex flex-col items-start shadow-[0_5px_15px_-3px_rgb(0_0_0_/_0.08)] w-full transition-all duration-300 ease-out bg-white border border-twafieldsgray-100 sm:rounded-md sm:max-w-xs group"
                 :class="{ 'p-4': !toast.html, 'p-0': toast.html }">
                 <template x-if="!toast.html">
                     <div class="relative">
@@ -42,7 +42,7 @@
                                     d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM11.9996 7C12.5519 7 12.9996 7.44772 12.9996 8V12C12.9996 12.5523 12.5519 13 11.9996 13C11.4474 13 10.9996 12.5523 10.9996 12V8C10.9996 7.44772 11.4474 7 11.9996 7ZM12.001 14.99C11.4488 14.9892 11.0004 15.4363 10.9997 15.9886L10.9996 15.9986C10.9989 16.5509 11.446 16.9992 11.9982 17C12.5505 17.0008 12.9989 16.5537 12.9996 16.0014L12.9996 15.9914C13.0004 15.4391 12.5533 14.9908 12.001 14.99Z"
                                     fill="currentColor"></path>
                             </svg>
-                            <p class="text-[13px] font-medium leading-none text-gray-800" x-text="toast.message"></p>
+                            <p class="text-[13px] font-medium leading-none text-twafieldsgray-800" x-text="toast.message"></p>
                         </div>
                         <p x-show="toast.description" :class="{ 'pl-5': toast.type!='default' }"
                             class="mt-1.5 text-xs leading-none opacity-70" x-text="toast.description"></p>
@@ -52,7 +52,7 @@
                     <div x-html="toast.html"></div>
                 </template>
                 <span @click="burnToast(toast.id)"
-                    class="absolute right-0 p-1.5 mr-2.5 text-gray-400 duration-100 ease-in-out rounded-full opacity-0 cursor-pointer hover:bg-gray-50 hover:text-gray-500"
+                    class="absolute right-0 p-1.5 mr-2.5 text-twafieldsgray-400 duration-100 ease-in-out rounded-full opacity-0 cursor-pointer hover:bg-twafieldsgray-50 hover:text-twafieldsgray-500"
                     :class="{
                         'top-1/2 -translate-y-1/2': !toast.description && !toast.html,
                         'top-0 mt-2.5': (toast

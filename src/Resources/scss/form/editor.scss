@@ -1,5 +1,5 @@
 .ql-toolbar {
-    @apply flex items-center rounded-t-md dark:placeholder-dark-400 w-full border-0 bg-transparent py-1.5 ring-0 placeholder:text-gray-400 focus:outline-none focus:ring-transparent sm:text-sm sm:leading-6;
+    @apply flex items-center rounded-t-md dark:placeholder-twafieldsdark-400 w-full border-0 bg-transparent py-1.5 ring-0 placeholder:text-twafieldsgray-400 focus:outline-none focus:ring-transparent sm:text-sm sm:leading-6;
     border: 1px solid rgb(209 213 219) !important;
     // border-bottom:1px solid  transparent !important;
     .ql-picker-label {
@@ -20,7 +20,7 @@
     background-color: #fcfcfc;
     border: 1px solid rgb(209 213 219) !important;
     border-top: 0px solid transparent !important;
-    @apply rounded-b-md   text-gray-600 ring-gray-300;
+    @apply rounded-b-md   text-twafieldsgray-600 ring-twafieldsgray-300;
 }
 .ql-editor{
     min-height: 200px;

@@ -20,10 +20,10 @@
             <div x-show="show" x-cloak class="absolute top100pers z-40 rounded-lg border bg-white p-3 w-full">
                 <div class="flex flex-col w-full items-center justify-center">
                     <div
-                        class="relative flex h-20 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 transition">
+                        class="relative flex h-20 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-twafieldsgray-300 bg-twafieldsgray-50 transition">
                         <div class="inline-flex items-center justify-center space-x-2">
                             <i class="fa-sharp fa-solid fa-cloud-arrow-up"></i>
-                            <p class="text-sm dark:text-dark-300 font-bold text-gray-600">Click here to upload</p>
+                            <p class="text-sm dark:text-twafieldsdark-300 font-bold text-twafieldsgray-600">Click here to upload</p>
                         </div>
                         <input @input="handleFileUpload" @if ($info['multiple']) multiple @endif
                             type="file" class="absolute inset-0 h-full w-full cursor-pointer opacity-0">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="soft-scrollbar mt-4 max-h-64 w-full overflow-auto px-2" x-ref="items">
-                    <ul role="list" class="dark:divide-dark-700 divide-y divide-gray-100">
+                    <ul role="list" class="dark:divide-twafieldsdark-700 divide-y divide-twafieldsgray-100">
                         <template x-for="(image_uploaded , index_uploaded) in uploaded">
 
                             <li class="li flex justify-between gap-x-6 py-2" x-key="image_uploaded.uploaded">
@@ -40,16 +40,16 @@
                                     <div class="cursor-pointer" @click="showImagePreview(image_uploaded.url)">
 
                                         <img :src="image_uploaded?.url"
-                                            class="h-12 w-12 flex-none rounded-full bg-gray-50 cursor-pointer" />
+                                            class="h-12 w-12 flex-none rounded-full bg-twafieldsgray-50 cursor-pointer" />
 
                                     </div>
 
 
                                     <div class="min-w-0 flex-auto">
                                         <p x-text="image_uploaded?.name"
-                                            class="dark:text-dark-300 truncate text-sm font-semibold leading-6 text-gray-900">
+                                            class="dark:text-twafieldsdark-300 truncate text-sm font-semibold leading-6 text-twafieldsgray-900">
                                         </p>
-                                        <p class="dark:text-dark-300 mt-1 text-xs leading-5 text-gray-500">
+                                        <p class="dark:text-twafieldsdark-300 mt-1 text-xs leading-5 text-twafieldsgray-500">
                                             <span x-text="image_uploaded?.status"></span>
                                         </p>
                                     </div>
@@ -81,16 +81,16 @@
                                                 </svg>
 
                                                 <img :src="image.url"
-                                                    class="flex-none rounded-full bg-gray-50 cursor-pointer" />
+                                                    class="flex-none rounded-full bg-twafieldsgray-50 cursor-pointer" />
                                             </div>
                                         </div>
 
 
                                         <div class="min-w-0 flex-auto">
                                             <p x-text="image.name"
-                                                class="dark:text-dark-300 truncate text-sm font-semibold leading-6 text-gray-900">
+                                                class="dark:text-twafieldsdark-300 truncate text-sm font-semibold leading-6 text-twafieldsgray-900">
                                             </p>
-                                            <p class="dark:text-dark-300 mt-1 text-xs leading-5 text-gray-500">
+                                            <p class="dark:text-twafieldsdark-300 mt-1 text-xs leading-5 text-twafieldsgray-500">
                                                 <span>Size: </span>
                                                 <span x-text="image.size"></span>
                                                 <span x-text="image.status"></span>
@@ -110,7 +110,7 @@
                         </template>
                     </ul>
                 </div>
-                <div x-show="showImageModal" class="fixed inset-0 z-50  bg-gray-800 bg-opacity-75" x-cloak
+                <div x-show="showImageModal" class="fixed inset-0 z-50  bg-twafieldsgray-800 bg-opacity-75" x-cloak
                     @click="showImageModal = false">
                     <div class=" twa-modal-container rounded-lg ">
                         <div class="twa-modal-image-container">
@@ -142,7 +142,7 @@
                         <div class="flex-1 flex items-center justify-end">
                             <button @click="upload" x-show="cropper === null"
                                 x-text="'Upload (' + previews.length + ')'" role="button"
-                                class="focus:ring-offset-white focus:shadow-outline group inline-flex items-center justify-center gap-x-2 border outline-none transition-all duration-200 ease-in-out hover:shadow-sm focus:border-transparent focus:ring-2 disabled:cursor-not-allowed disabled:opacity-80 text-xs px-4 py-2 text-primary-50 ring-primary-500 bg-primary-500 focus:bg-primary-600 hover:bg-primary-600 border-transparent focus:ring-offset-2 dark:focus:ring-offset-dark-900 dark:focus:ring-primary-600 dark:bg-primary-700 dark:hover:bg-primary-600 dark:hover:ring-primary-600 rounded-md"
+                                class="focus:ring-offset-white focus:shadow-outline group inline-flex items-center justify-center gap-x-2 border outline-none transition-all duration-200 ease-in-out hover:shadow-sm focus:border-transparent focus:ring-2 disabled:cursor-not-allowed disabled:opacity-80 text-xs px-4 py-2 text-twafieldsprimary-50 ring-twafieldsprimary-500 bg-twafieldsprimary-500 focus:bg-twafieldsprimary-600 hover:bg-twafieldsprimary-600 border-transparent focus:ring-offset-2 dark:focus:ring-offset-twafieldsdark-900 dark:focus:ring-twafieldsprimary-600 dark:bg-twafieldsprimary-700 dark:hover:bg-twafieldsprimary-600 dark:hover:ring-twafieldsprimary-600 rounded-md"
                                 type="button">
                             </button>
                             <div x-show="cropper != null" class="flex gap-1">
