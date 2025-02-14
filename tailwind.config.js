@@ -1,4 +1,5 @@
 import colors from 'tailwindcss/colors';
+import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -53,5 +54,6 @@ module.exports = {
     },
   },
   plugins: [
+    forms,
   ],
 };
